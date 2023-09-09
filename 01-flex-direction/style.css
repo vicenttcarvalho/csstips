@@ -1,11 +1,22 @@
+* {
+  margin: 0;
+}
+
 body {
-  background: #e5e5e5;
+  background: #201b2c;
   font-family: 'Roboto Mono', sans-serif;
 }
 
 h1{
-  font-weight: 300;
+  font-weight: 900;
   text-align: center;
+  color: #fff;
+}
+
+h2 {
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
 }
 
 p {
@@ -21,29 +32,30 @@ p {
 }
 
 .controls {
-  display: flex;
-  flex-direction: row; 
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  flex: end;
-  position: fixed;
-  top: 0;
-  padding: 10px;
-  z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    flex: end;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 
 }
 
 .controls button {
-  width: 100px;
-  height: 50px;
+  width: 120px;
+  height: 70px;
   background: #00ff88;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 2px;
   color: #0e1324;
   border: none;
-  border-radius: 3px;
-  margin-right: 5px;
-  margin-top: 50px;
+  border-radius: 2px;
+  margin-bottom: -70px;
+  margin-right: 300px;
+  margin-top: 115px;
   transition: transform 0.3s ease 0s;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -58,28 +70,30 @@ p {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 35px;
   gap: 10px;
   height: auto;
 }
 
 div {
-  width: 50%;
+  width: 62%;
+  margin-right: 100px;
   float: right;
 }
 
 div.bloco {
-  display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
     width: 150px;
     height: 100px;
-    background-color: #201b2c;
+    background-color: #0e1324;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     transition: all 0.5s ease;
 }
 
@@ -87,6 +101,17 @@ div.bloco {
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+/* Estilize a imagem para posicioná-la no canto inferior direito */
+.img-corner {
+  width: 410px;
+  height: 280px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 70px;
+  margin-right: 300px;
 }
 
 @keyframes fadeIn {
