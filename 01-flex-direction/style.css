@@ -3,19 +3,21 @@
 }
 
 body {
-  background: #201b2c;
+  background: #000;
   font-family: 'Roboto Mono', sans-serif;
 }
 
 h1{
   font-weight: 900;
   text-align: center;
+  margin-left: 100px;
   color: #fff;
 }
 
 h2 {
     font-weight: 900;
     text-align: center;
+    margin-left: 100px;
     color: #fff;
 }
 
@@ -35,8 +37,9 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+    gap: 10px;
+    margin-left: 150px;
+    margin-top: 100px;
     flex: end;
     position: fixed;
     top: 0;
@@ -48,14 +51,13 @@ p {
   width: 120px;
   height: 70px;
   background: #00ff88;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 2px;
   color: #0e1324;
   border: none;
   border-radius: 2px;
-  margin-bottom: -70px;
-  margin-right: 300px;
-  margin-top: 115px;
+  margin-bottom: 0px;
+  margin-right: 10px;
   transition: transform 0.3s ease 0s;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -70,16 +72,16 @@ p {
 
 .container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 850px;
   margin-top: 35px;
   gap: 10px;
-  height: auto;
+  margin-right: 200px;
 }
 
 div {
-  width: 62%;
-  margin-right: 100px;
+  width: 65%;
   float: right;
 }
 
@@ -105,13 +107,12 @@ img {
 
 /* Estilize a imagem para posicioná-la no canto inferior direito */
 .img-corner {
-  width: 410px;
-  height: 280px;
+  width: 600px;
+  height: 400px;
   position: fixed;
   bottom: 0;
   right: 0;
-  margin-bottom: 70px;
-  margin-right: 300px;
+  margin-right: 200px;
 }
 
 @keyframes fadeIn {
