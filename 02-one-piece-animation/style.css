@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+img {
+  width: 100%;
+}
+
+.card {
+  width: 12vw;
+  position: relative;
+}
+
+.title {
+  inset: 0;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.inner img {
+  aspect-ratio: 9/10;
+  object-fit:cover;
+  border-radius: 8px;
+}
+
+.card:hover .inner {
+  transform: perspective(900px) translateY(-5%) rotateX(30deg) translateZ(0);
+}
+
+.title {
+  transform: translate3d(0%, 70%, 0);
+}
+
+.card:hover .title {
+  transform: translate3d(0%, 30%, 0);
+}
+
+.inner, .title {
+  transition: all 1s;
+}
